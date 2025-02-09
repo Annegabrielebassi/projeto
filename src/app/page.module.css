@@ -1,5 +1,5 @@
 .mesagem{
-    font-size: 26px;
+    font-size: 1.5rem;
     text-align: center;
     height: 100%;
     margin: auto;
@@ -11,6 +11,7 @@
     margin: auto;
     align-items: center;
     flex-direction: column;
+    padding: 5% 0;
 }
 .campoLogo{
     background-color: var(--cor-secundaria);

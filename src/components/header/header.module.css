@@ -72,3 +72,14 @@
 .subMenu > li:hover{
   background-color: #14aa71;
 }
+
+@media screen and (max-width: 570px) {
+  .logo{
+    display: none;
+  }
+
+  .navContainer, .navList{
+    width: 100%;
+    height: 30px;
+  }
+}
