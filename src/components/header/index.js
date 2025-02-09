@@ -18,7 +18,7 @@ export default function Header() {
                         <Link href="#" className={style.navLink}>Médico</Link>
                         <ul className={style.subMenu}>
                             <li className={style.navItem}>
-                                <Link href="#" className={style.navLink}>Listar</Link>
+                                <Link href="medico" className={style.navLink}>Listar</Link>
                             </li>
                             <li className={style.navItem}>
                                 <Link href="#" className={style.navLink}>Adicionar</Link>
