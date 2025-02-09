@@ -1,47 +1,6 @@
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ffeb3b; /* Cor de fundo amarela, como um girassol */
-    padding: 10px 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    border-radius: 8px; /* Bordas arredondadas */
-  }
-  
-  .botao {
-    width: 50px;
-    height: 50px;
-    padding: 5px;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-  }
-  
-  .girassol {
-    width: 100%;
-    height: auto;
-  }
-  
-  .navList {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-  }
-  
-  .navItem {
-    margin: 0;
-  }
-  
-  .navLink {
-    text-decoration: none;
-    color: #333; /* Cor do texto */
-    font-weight: bold;
-    padding: 8px 12px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .navLink:hover {
-    background-color: #fdd835; /* Cor de fundo ao passar o mouse */
-  }
-  
+.footer{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+}

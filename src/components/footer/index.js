@@ -5,10 +5,11 @@ import { useState } from "react";
 
 export default function Footer() {
     return (
-        <div>
+        <div className={style.footer}>
             <h2>
-                footer
+                Clínica médica Esmeralda
             </h2>
+            <p>&copy; Todos os direitos reservados a Clínica médica Esmeralda</p>
         </div>
     )
 }

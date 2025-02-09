@@ -1,47 +1,74 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--cor-secundaria); /* Cor de fundo amarela, como um girassol */
-    padding: 10px 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    border-radius: 8px; /* Bordas arredondadas */
-  }
+  display: flex;
+  align-items: center;
+  background-color: var(--cor-secundaria);
+  /* Cor de fundo amarela, como um girassol */
+  padding: 10px 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  /* Sombra suave */
+  border-radius: 0 0 8px 8px;
+  /* Bordas arredondadas */
+  width: 100%;
+}
+
+.navContainer{
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+
+.logo { 
+  width: 200px;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.navItem {
+  margin: 0;
   
-  .botao {
-    width: 50px;
-    height: 50px;
-    padding: 5px;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-  }
-  
-  .girassol {
-    width: 100%;
-    height: auto;
-  }
-  
-  .navList {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-  }
-  
-  .navItem {
-    margin: 0;
-  }
-  
-  .navLink {
-    text-decoration: none;
-    color: #333; /* Cor do texto */
-    font-weight: bold;
-    padding: 8px 12px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .navLink:hover {
-    background-color: #fdd835; /* Cor de fundo ao passar o mouse */
-  }
-  
+}
+
+.navLink {
+  text-decoration: none;
+  color: var(--cor-primaria);
+  /*color: #333;
+   Cor do texto */
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.navLink:hover{
+  color: rgba(218, 218, 218, 0.808);
+}
+
+.navItem:hover > .subMenu{
+  display: flex;
+  flex-direction: column;
+  background-color: #18a06c;
+}
+
+.subMenu{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  list-style: none;
+  display: none;
+  position: absolute;
+  width: 200px;
+}
+
+.subMenu > li{
+  padding: 2% 0;
+  border: 1px solid rgb(23, 116, 61);
+  margin: 0;
+  top: 0;
+}
+
+.subMenu > li:hover{
+  background-color: #14aa71;
+}

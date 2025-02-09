@@ -4,35 +4,69 @@ import style from "./header.module.css"
 import { useState } from "react";
 
 export default function Header() {
-    const [showMenu, setShowMenu] = useState(true)
-    const [buttonText, setButtonText] = useState("aparecendo")
-
-    const handleClick = () => {
-        setShowMenu(!showMenu)
-        setButtonText(showMenu ? "desaparecendo" : "aparecendo")
-    }
-
     return (
         <header className={style.header}>
-            <button className={style.botao} onClick={handleClick}>
-                <img src="/imagens/girassol.jpg" alt="Girassol" className={style.girassol} />
-            </button>
-            {
-                showMenu &&
-                <nav>
-                    <ul className={style.navList}>
-                        <li className={style.navItem}>
-                            <Link href="/sobre" className={style.navLink}>Sobre</Link>
-                        </li>
-                        <li className={style.navItem}>
-                            <Link href="/state" className={style.navLink}>Hello</Link>
-                        </li>
-                        <li className={style.navItem}>
-                            <Link href="/" className={style.navLink}>Inicial</Link>
-                        </li>
-                    </ul>
-                </nav>
-            }
+            <div className={style.botao}>
+                <img src="/imagens/Borcelle (1).png" alt="Logo" className={style.logo} />
+            </div>
+            <nav className={style.navContainer}>
+                <ul className={style.navList}>
+                    <li className={style.navItem}>
+                        <Link href="/" className={style.navLink}>Home</Link>
+                    </li>
+                    <li className={style.navItem}>
+                        <Link href="#" className={style.navLink}>Médico</Link>
+                        <ul className={style.subMenu}>
+                            <li className={style.navItem}>
+                                <Link href="#" className={style.navLink}>Listar</Link>
+                            </li>
+                            <li className={style.navItem}>
+                                <Link href="#" className={style.navLink}>Adicionar</Link>
+                            </li>
+                            <li className={style.navItem}>
+                                <Link href="#" className={style.navLink}>Editar</Link>
+                            </li>
+                            <li className={style.navItem}>
+                                <Link href="#" className={style.navLink}>Excluir</Link>
+                            </li>
+                        </ul>
+                    </li>
+                    <li className={style.navItem}>
+                        <Link href="#" className={style.navLink}>Paciente</Link>
+                        <ul className={style.subMenu}>
+                            <li className={style.navItem}>
+                                <Link href="#" className={style.navLink}>Listar</Link>
+                            </li>
+                            <li className={style.navItem}>
+                                <Link href="#" className={style.navLink}>Adicionar</Link>
+                            </li>
+                            <li className={style.navItem}>
+                                <Link href="#" className={style.navLink}>Editar</Link>
+                            </li>
+                            <li className={style.navItem}>
+                                <Link href="#" className={style.navLink}>Excluir</Link>
+                            </li>
+                        </ul>
+                    </li>
+                    <li className={style.navItem}>
+                        <Link href="#" className={style.navLink}>Consulta</Link>
+                        <ul className={style.subMenu}>
+                            <li className={style.navItem}>
+                                <Link href="#" className={style.navLink}>Listar consultas</Link>
+                            </li>
+                            <li className={style.navItem}>
+                                <Link href="#" className={style.navLink}>Agendar consulta</Link>
+                            </li>
+                            <li className={style.navItem}>
+                                <Link href="#" className={style.navLink}>Editar agendamento</Link>
+                            </li>
+                            <li className={style.navItem}>
+                                <Link href="#" className={style.navLink}>Cancelar</Link>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </header>
     )
 }

@@ -1,0 +1,19 @@
+.mesagem{
+    font-size: 26px;
+    text-align: center;
+    height: 100%;
+    margin: auto;
+}
+
+.page{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    flex-direction: column;
+}
+.campoLogo{
+    background-color: var(--cor-secundaria);
+    padding: 1%;
+    border-radius: 100%;
+}

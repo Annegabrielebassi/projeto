@@ -1,4 +1,27 @@
 :root{
   --cor-secundaria: #00b46e;
-  --cor-primaria: white
+  --cor-primaria: #f2e3d5;
+}
+
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', sans-serif;
+}
+
+body{
+  background-color: var(--cor-primaria);
+}
+
+html, body {
+  height: 100vh; /* 100% da altura da tela */
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* Ocupa todo o espaço disponível */
+  display: flex;
+  flex-direction: column;
 }
